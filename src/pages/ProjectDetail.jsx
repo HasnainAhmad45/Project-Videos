@@ -12,7 +12,7 @@ const projectsData = {
     },
     hms: {
         title: "Hotel Management System",
-        videoUrl: "https://www.youtube.com/embed/YOUR_HMS_VIDEO_ID",
+        videoUrl: "https://www.youtube.com/embed/-2m1TBQ5WgM?si=paCdEMrULHLeZ3TV",
     },
 };
 
