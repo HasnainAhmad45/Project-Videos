@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ProjectDetail } from "../pages/ProjectDetail";
 
 const projectsData = {
@@ -20,31 +20,37 @@ const projectsData = {
 export const App = () => {
   return (
     <Router>
-      <Switch>
+      <Routes>
         {/* Main Projects Page */}
-        <Route exact path="/">
-          <div style={styles.container}>
-            <h1 style={styles.header}>My Projects</h1>
-            <div style={styles.grid}>
-              {Object.keys(projectsData).map((key) => (
-                <Link
-                  key={key}
-                  to={`/projects/${key}`}
-                  style={styles.cardLink}
-                >
-                  <div style={styles.card}>
-                    <h2 style={styles.cardTitle}>{projectsData[key].title}</h2>
-                    <p style={styles.cardSubtitle}>Click to watch video</p>
-                  </div>
-                </Link>
-              ))}
+        <Route
+          path="/"
+          element={
+            <div style={styles.container}>
+              <h1 style={styles.header}>My Projects</h1>
+              <div style={styles.grid}>
+                {Object.keys(projectsData).map((key) => (
+                  <Link
+                    key={key}
+                    to={`/projects/${key}`}
+                    style={styles.cardLink}
+                  >
+                    <div style={styles.card}>
+                      <h2 style={styles.cardTitle}>{projectsData[key].title}</h2>
+                      <p style={styles.cardSubtitle}>Click to watch video</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
             </div>
-          </div>
-        </Route>
+          }
+        />
 
         {/* Project Detail Page */}
-        <Route path="/projects/:projectId" component={ProjectDetail} />
-      </Switch>
+        <Route
+          path="/projects/:projectId"
+          element={<ProjectDetail projectsData={projectsData} />}
+        />
+      </Routes>
     </Router>
   );
 };
@@ -92,5 +98,4 @@ const styles = {
   },
 };
 
-// Export default
 export default App;
