@@ -14,6 +14,10 @@ const projectsData = {
         title: "Hotel Management System",
         videoUrl: "https://www.youtube.com/embed/-2m1TBQ5WgM?si=paCdEMrULHLeZ3TV",
     },
+    mic: {
+        title: "Made in China Scraper",
+        videoUrl: "https://www.youtube.com/embed/cvHh_c09nWs?si=dZ2wQj29g8im6rHA",
+    },
 };
 
 export const ProjectDetail = () => {

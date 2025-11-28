@@ -3,18 +3,22 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { ProjectDetail } from "../pages/ProjectDetail";
 
 const projectsData = {
-  cms: {
-    title: "Car Showroom Management System",
-    videoUrl: "https://www.youtube.com/embed/YOUR_DBMS_VIDEO_ID",
-  },
-  cpp: {
-    title: "C++ Social Media Project",
-    videoUrl: "https://www.youtube.com/embed/YOUR_CPP_VIDEO_ID",
-  },
-  hms: {
-    title: "Hotel Management System",
-    videoUrl: "https://www.youtube.com/embed/YOUR_HMS_VIDEO_ID",
-  },
+    cms: {
+        title: "Car Showroom Management System",
+        videoUrl: "https://www.youtube.com/embed/-B12q5JdtR4?si=qEHl0FWhBuaTlbeU",
+    },
+    cpp: {
+        title: "C++ Social Media Project",
+        videoUrl: "https://www.youtube.com/embed/9qYV96FnXZQ?si=N85JuexEht93PEz3",
+    },
+    hms: {
+        title: "Hotel Management System",
+        videoUrl: "https://www.youtube.com/embed/-2m1TBQ5WgM?si=paCdEMrULHLeZ3TV",
+    },
+    mic: {
+        title: "Made in China Scraper",
+        videoUrl: "https://www.youtube.com/embed/cvHh_c09nWs?si=dZ2wQj29g8im6rHA",
+    },
 };
 
 export const App = () => {
