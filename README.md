@@ -1,4 +1,4 @@
-Welcome! Here’s a list of my projects and may more that I’ve built and showcased on YouTube.
+Welcome! Here’s a list of my projects and many more that I’ve built and showcased on YouTube.
 
 ## Projects
 
